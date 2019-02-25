@@ -27,7 +27,7 @@
 
    calDays(calDate)
       Writes the daily rows in the calendar table, highlighting calDate
-	
+
 */
 
 /* Set the date displayed in the calendar */
@@ -46,6 +46,7 @@ function createCalendar(calDate) {
 
 // Function to write the calendar caption
 function calCaption(calDate) {
+
       //monthName array contains the list of month names
       var monthName = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
@@ -58,3 +59,27 @@ function calCaption(calDate) {
       //write the caption
       return "<caption>" + monthName[thisMonth] + " " + thisYear + "</caption>";
 }
+
+
+
+//Example of a for loop
+var htmlCode = "<tr>";
+for (var i = 1; i <= 4; i++) {
+      htmlCode += "<td>" + i + "</td>";
+}
+htmlCode += "</tr>";
+
+//Exampke of a while loop
+var htmlCode = "<tr>";
+var i = 1;
+while (i <= 4) {
+      htmlCode += "<td>" + i + "</td>";
+}
+
+//Example of a do/while 
+var htmlCode = "<tr>";
+var i = 1;
+do {
+      htmlCode += "<td>" + i + "</td>";
+} while (i <= 4);
+htmlCode += "</tr>";
